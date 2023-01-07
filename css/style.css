@@ -52,6 +52,7 @@ p{
         max-width: 400px;
         max-height: fit-content;
         padding-top: 20px;
+        position: relative;
         
         
     }
@@ -61,7 +62,7 @@ p{
 .container .main-home .navbar{
     width: 100%;
     margin: 10px 0 30px;
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,6 +71,7 @@ p{
 .container .main-home .navbar .mobile-image{
     display: none;
     overflow: hidden;
+    
 }
 .container .main-home .navbar .mobile-image img{
     max-width: 100%;
@@ -92,13 +94,39 @@ p{
     margin-right: 25px;
     
 }
+.container .main-home .hidden-navbar{
+   
+    display: none;
+    
+    
+}
+.d-flex-colum{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+.container .main-home .hidden-navbar>h3{
+
+    color: white;
+
+}
 @media(max-width:767px){
+    
+    
     .container .main-home .navbar ul{
         display: none;
     }
     .container .main-home .navbar .mobile-image{
         display: block;
     }
+    
 }
 
 .container .main-home .navbar ul li{
