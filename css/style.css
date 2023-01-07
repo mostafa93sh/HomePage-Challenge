@@ -71,6 +71,7 @@ p{
 .container .main-home .navbar .mobile-image{
     display: none;
     overflow: hidden;
+    z-index: 11;
     
 }
 .container .main-home .navbar .mobile-image img{
@@ -92,6 +93,7 @@ p{
     display: flex;
     list-style: none;
     margin-right: 25px;
+    position: relative;
     
 }
 .container .main-home .hidden-navbar{
@@ -101,16 +103,22 @@ p{
     
 }
 .d-flex-colum{
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 20px;
+    display: none;
+}
+@media(max-width:767px){
 
-    display: flex;
-    flex-direction: column;
+    .d-flex-colum{
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 20px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
 }
 .container .main-home .hidden-navbar>h3{
 
